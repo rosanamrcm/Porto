@@ -1,0 +1,198 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+body {
+	width: 100%;
+	height: 100vh;	
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	background: url("opo.jpg") no-repeat center center;
+	background-size: cover;
+	transition-property: background;
+	transition-duration: .7s;
+	transition-timing-function: linear;
+}
+
+.cabecalho {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header h1, nav a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: white;
+}
+
+header h1 {
+	font-size: 30px;
+	margin-top: 35px;
+	margin-left: 155px;
+}
+
+header nav {
+	padding: 45px 300px 5px 30px;
+	font-size: 20px;
+}
+
+header nav a:nth-child(1) {
+	margin-right: 40px;
+}
+
+header nav a:nth-child(2) {
+	margin-right: 40px;
+}
+
+header nav a:hover {
+	color: black;
+}
+
+.informacao {
+	background: url("azulejo.jpg");
+	display: flex;
+	flex-direction: column;
+	font-family: 'Slabo 27px', serif;
+	padding-left: 20px;
+}
+
+#sobre {
+	padding-top: 30px;
+	text-align: center; 
+	font-weight: 600;
+	font-size: 40px;
+	color: darkblue;
+}
+
+#pontos-turisticos {
+	padding-top:  30px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 40px;
+	color:  darkblue;
+}
+
+.point {
+	padding-top: 20px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 30px;
+	color: black;
+}
+
+.image-text {
+	display: flex;
+	flex-direction: row;
+}
+
+.image-text  img{
+	padding-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 500px;
+}
+
+.image-text p {
+	padding-top: 20px;
+	padding-left: 10px;
+	font-weight: 600;
+	font-size: 25px;
+	color: black;
+}
+
+.rodape {
+	width: 100%;
+	height: 25%;
+	background-color: black;
+	font-family: font-family: 'Slabo 27px', serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer h3 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-top: 80px;
+	padding-left: 20px;
+	color: white;
+}
+
+@media (max-width: 568px) {
+
+	.cabecalho {
+		display: flex;
+		flex-direction: column;
+	}
+		header h1 {
+		white-space: nowrap;
+		font-size: 20px;
+		margin-left: 10px;
+	}
+	
+	header nav a {
+		margin-left: 20px;
+		margin-top: 10px;
+		display: inline-flex;	
+	}
+	.image-text {
+		display:  flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.rodape {
+		width: 100%;
+		height: 300px;
+		display: flex;
+		flex-direction: row;
+	}
+	footer h3 {
+		margin: 40px 30px 20px 10px;
+		padding-left: 5px;
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 1024px) {
+	.cabecalho {
+		display: flex;
+		flex-direction: column;
+	}
+		header h1 {
+		white-space: nowrap;
+		font-size: 20px;
+		margin-left: 30px;
+	}
+	
+	header nav a {
+		margin-left: 20px;
+		margin-top: 10px;
+		display: inline-flex;	
+	}
+
+	.image-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.rodape {
+		width: 100%;
+		height: 250px;
+		display: flex;
+		flex-direction: row;
+	}
+	footer h3 {
+		margin: 40px 30px 20px 10px;
+		padding-left: 5px;
+		white-space: nowrap;
+	}
+}		
+
